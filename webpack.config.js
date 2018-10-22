@@ -13,11 +13,11 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Greeting page'
+            template: "./src/client/index.html"
         }),
-        new CleanWebpackPlugin(["dist"], {
-            exclude: ["index.html"]
-        })
+        /* new CleanWebpackPlugin(["dist"], {
+             exclude: ["./index.html"]
+         })*/
 
     ],
     devServer: {
