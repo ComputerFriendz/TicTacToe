@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import tictactoe from '../logic/tictactoe'
+import tictactoe from '../logic/tictactoe';
 import css from '../styles/app.css';
 
 function getMessage() {
