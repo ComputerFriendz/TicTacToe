@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const extractSass = new ExtractTextPlugin('style.css');
 
 
 module.exports = {
@@ -15,21 +17,21 @@ module.exports = {
         rules:[
             {
                 test: /\.css$/,
-                loaders: [
-                    'style-loader',
-                    'css-loader'
-                  ]
+                loader: extractSass.extract({
+	                loader: ["css-loader", "sass-loader"]
+	               })
             }
        ]
     },
 
     plugins: [
+        extractSass,
         new HtmlWebpackPlugin({
             template: "./src/client/index.html"
         }),
-        /* new CleanWebpackPlugin(["dist"], {
-             exclude: ["./index.html"]
-         })*/
+         new CleanWebpackPlugin(["dist"], {
+             exclude: ["./src/client/index.html"]
+         })
 
     ],
     devServer: {
