@@ -2,7 +2,7 @@
 var array = ["", "", "", "", "", "", "", "", ""];
 var currentPlayer = 'x';
 var winner;
-bool = true;
+var iswinner = true;
 
 function tictactoe(currentPlayer)
 {
@@ -15,7 +15,7 @@ function tictactoe(currentPlayer)
     }
     return currentPlayer;
 }
-function checkWinner(bool) {
+function checkWinner(iswinner) {
     if (array[0] == currentPlayer && array[1] == currentPlayer && array[2] == currentPlayer) {
         console.log('WINNER');
         winner = currentPlayer;

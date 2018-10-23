@@ -7,7 +7,7 @@ test("returns O its your turn", () => {
 });
 
 test("checks if there is a winner", () => {
-    expect(myFunctions.checkWinner(bool)).toBe(false)
+    expect(myFunctions.checkWinner(false)).toBe(false)
 })
 
 
