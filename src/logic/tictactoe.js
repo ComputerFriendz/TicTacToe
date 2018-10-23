@@ -4,12 +4,11 @@ var currentPlayer = 'x';
 var winner;
 bool = true;
 
-function tictactoe()
+function tictactoe(currentPlayer)
 {
     if (currentPlayer === 'x') {
         currentPlayer = 'o'
         /*document.getElementById('gamer').innerHTML = 'O, its your turn!';*/
-
     }
     else {
         currentPlayer = 'x'
