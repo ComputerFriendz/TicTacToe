@@ -7,6 +7,7 @@ const PLAYER_2_TOKEN = 'X';
 class XOBoard {
 
   constructor() {
+    this.reset()
   }
 
   eachCell(callback) {
@@ -21,6 +22,15 @@ class XOBoard {
     });
   }
 
-  
+  reset() {
+    this.board = [
+      [0, 0, 0],
+      [0, 0, 0],
+      [0, 0, 0]
+    ];
+    this.eachCell((value, row, col) => {
+      $('#cell-' + row + '-' + col).html('').attr('disabled', false);
+    });
+  }
 }
 export default XOBoard;
