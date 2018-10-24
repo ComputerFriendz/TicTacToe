@@ -1,4 +1,4 @@
-import XOBoard from './board';
+import XOBoard from './Board';
 import _ from 'lodash';
 var board = new XOBoard();
 
