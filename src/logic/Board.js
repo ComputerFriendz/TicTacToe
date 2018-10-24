@@ -31,6 +31,21 @@ class XOBoard {
     this.eachCell((value, row, col) => {
       $('#cell-' + row + '-' + col).html('').attr('disabled', false);
     });
+    if (this.board = [
+      [0, 0, 0],
+      [0, 0, 0],
+      [0, 0, 0]])
+      {
+        return true;
+      }
+
+
+  }
+
+  disable() {
+    this.eachCell((value, row, col) => {
+      $('#cell-' + row + '-' + col).attr('disabled', true);
+    });
   }
 }
 export default XOBoard;

@@ -3,10 +3,25 @@ import _ from 'lodash';
 var board = new XOBoard();
 
 
-test("returns O its your turn", () => {
+test("confirms that the function loops through the board", () => {
   expect(board.eachCell()).toBe();
 });
 
-test("returns O its your turn", () => {
-    expect(board.reset()).toBe();
+test("confirms that the function resets the board", () => {
+    expect(board.reset()).toBe(true);
+});
+
+test("confirms that the function disables the board", () => {
+    expect(board.disable()).toBe();
+});
+
+test('that the new board is initialized', () => {
+  let board2 = new XOBoard();
+  expect(board2).toEqual({
+      board: [
+      [0, 0, 0],
+      [0, 0, 0],
+      [0, 0, 0]
+    ]
+  });
 });
