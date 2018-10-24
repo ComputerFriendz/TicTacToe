@@ -47,5 +47,12 @@ class XOBoard {
       $('#cell-' + row + '-' + col).attr('disabled', true);
     });
   }
+
+  set(row, col, player) {
+  this.board[row][col] = player;
+  let token = (player == 1) ? PLAYER_1_TOKEN : PLAYER_2_TOKEN;
+  $('#cell-' + row + '-' + col).html(token).attr('disabled', true);
+  return this.board[row][col];
+  }
 }
 export default XOBoard;

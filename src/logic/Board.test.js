@@ -25,3 +25,7 @@ test('that the new board is initialized', () => {
     ]
   });
 });
+
+test("confirms that the function marks the board with the player's number", () => {
+    expect(board.set(1, 2, 1)).toBe(1);
+});
