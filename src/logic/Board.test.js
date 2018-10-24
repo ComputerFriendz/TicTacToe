@@ -25,7 +25,3 @@ test('that the new board is initialized', () => {
     ]
   });
 });
-
-test("confirms that the function sets the value of the player to the right spot", () => {
-    expect(board.set(1, 2, 1)).toBe(1);
-});
