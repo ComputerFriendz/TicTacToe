@@ -8,6 +8,20 @@ function notify(msg) {
   $notice.html(msg);
   return msg;
 }
+var handler = function () {
+    // get the input value and reset
+    var value = $modalInput.val();
+    
+    $modalInput.val('');
+
+    // remove event handlers and hide everything
+    $modalButton.off();
+    $modalInput.off();
+    $modalOverlay.hide();
+
+    // execute the callback
+    callback(value);
+  };
 
 var currentPlayer = 1,
   playername = '',
@@ -19,5 +33,5 @@ var currentPlayer = 1,
   $notice;
 
 module.exports = {
-    notify
+    notify,
 }
