@@ -18,6 +18,18 @@ var currentPlayer = 1,
   $modalPrompt,
   $notice;
 
+$(function () {
+    // create a new board
+    var board = new XOBoard();
+
+    // grab jQuery collections
+    $modalOverlay = $("#overlay");
+    $modalPrompt = $("#modal .prompt");
+    $modalInput = $("#modal input");
+    $modalButton = $("#modal button");
+
+});
+
 module.exports = {
     notify
 }

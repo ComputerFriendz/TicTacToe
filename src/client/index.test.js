@@ -1,4 +1,4 @@
-import index from './index';
+
 import _ from 'lodash';
 
 const myFunctions = require('./index.js');
