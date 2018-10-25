@@ -26,4 +26,4 @@ The assignment was about creating a basic TicTacToe game while using good coding
 * Haukur Guðmundsson
 * Ída Guðrún Atladóttir
 * Sigrún Sunna Guðmundsdóttir
-* Thelma Run Jóhannsdóttir
+* Thelma Rut Jóhannsdóttir
