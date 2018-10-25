@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import $ from 'jquery';
-import XOBoard from '../logic/board';
+import XOBoard from '../logic/Board';
 //import css from '../styles/app.css';
 
 $notice = $("#instructions span");
