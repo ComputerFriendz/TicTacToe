@@ -92,5 +92,10 @@ class XOBoard {
     // determine if a win was found
     return rowWin || columnWin || forwardDiagonalWin || backwardDiagonalWin;
   }
+
+  findTie() {
+    return $(".btn:disabled").length === 9;
+    
+  }
 }
 export default XOBoard;

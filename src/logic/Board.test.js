@@ -33,3 +33,7 @@ test("confirms that the function marks the board with the player's number", () =
 test("returns false if there is no winner", () => {
     expect(board.findWinner(1, 2, 1)).toBe(false);
 });
+
+test("returns false if not all the buttons are disabled", () => {
+    expect(board.findTie()).toBe(false);
+});
