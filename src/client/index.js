@@ -13,12 +13,15 @@ var currentPlayer = 1,
   $modalPrompt,
   $notice;
 
+$notice = $("#instructions span");
+
 
 
 function notify(msg) {
   $notice.html(msg);
   return msg;
 }
+
 
 $(function () {
   // create a new board
@@ -29,7 +32,6 @@ $(function () {
   $modalPrompt = $("#modal .prompt");
   $modalInput = $("#modal input");
   $modalButton = $("#modal button");
-  $notice = $("#instructions span");
 
 });
 
