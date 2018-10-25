@@ -18,11 +18,6 @@ var currentPlayer = 1,
   $modalPrompt,
   $notice;
 
-/*gameNotify
-function notify(msg) {
-  $notice.html(msg);
-}*/
-
 module.exports = {
     notify
 }
