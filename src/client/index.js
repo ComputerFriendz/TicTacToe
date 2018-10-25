@@ -21,4 +21,3 @@ var currentPlayer = 1,
 module.exports = {
     notify
 }
-
