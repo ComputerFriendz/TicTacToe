@@ -18,18 +18,44 @@ var currentPlayer = 1,
   $modalPrompt,
   $notice;
 
+function promptUser(prompt, callback) {
+
+  $modalOverlay = $("#overlay");
+  $modalPrompt = $("#modal .prompt");
+  $modalInput = $("#modal input");
+  $modalButton = $("#modal button");
+
+
+    // show the modal, set the prompt and set focus
+    $modalOverlay.show();
+    $modalPrompt.html(prompt);
+    $modalInput.focus();
+
+
+
+
+
+// add event listeners
+    $modalButton.on('click');
+    $modalInput.on('keypress', function (e) {
+      if (e.which == 13) {
+
+        handler();
+        return false;
+      }
+    });
+}
+
 $(function () {
     // create a new board
     var board = new XOBoard();
 
     // grab jQuery collections
-    $modalOverlay = $("#overlay");
-    $modalPrompt = $("#modal .prompt");
-    $modalInput = $("#modal input");
-    $modalButton = $("#modal button");
+
 
 });
 
 module.exports = {
-    notify
+    notify,
+    promptUser
 }
