@@ -24,7 +24,15 @@ class Player {
       }
     
     get wins() {
-        return this._wins;
+      return this._wins;
+    }
+
+    get losses() {
+      return this._losses;
+    }
+    
+    get games() {
+      return this._wins + this._losses;
     }
 }
 export default Player;
