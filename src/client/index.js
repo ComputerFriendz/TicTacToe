@@ -14,9 +14,3 @@ var currentPlayer = 1,
   $modalOverlay,
   $modalPrompt,
   $notice;
-
-gameNotify
-function notify(msg) {
-  $notice.html(msg);
-}
-
