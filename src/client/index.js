@@ -1,9 +1,12 @@
 import _ from 'lodash';
-import css from '../styles/app.css';
+import $ from 'jquery';
+//import css from '../styles/app.css';
 
+$notice = $("#instructions span");
 
 function notify(msg) {
   $notice.html(msg);
+  return msg;
 }
 
 var currentPlayer = 1,
@@ -15,8 +18,12 @@ var currentPlayer = 1,
   $modalPrompt,
   $notice;
 
-gameNotify
+/*gameNotify
 function notify(msg) {
   $notice.html(msg);
+}*/
+
+module.exports = {
+    notify
 }
 
