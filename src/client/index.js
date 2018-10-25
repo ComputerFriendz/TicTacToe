@@ -9,6 +9,12 @@ function notify(msg) {
     $notice.html(msg);
     return msg;
 }
+
+function nextTurn() {
+    playername = players[currentPlayer - 1].name;
+    notify(playername + '\'s Turn');
+}
+
 var handler = function () {
     // get the input value and reset
     var value = $modalInput.val();
