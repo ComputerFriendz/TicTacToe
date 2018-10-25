@@ -8,7 +8,10 @@ function notify(msg) {
   $notice.html(msg);
   return msg;
 }
-
+function nextTurn() {
+    playername = players[currentPlayer - 1].name;
+    notify(playername + '\'s Turn');
+}
 var currentPlayer = 1,
   playername = '',
   players = [],
