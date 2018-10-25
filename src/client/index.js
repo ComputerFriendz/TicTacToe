@@ -8,10 +8,27 @@ function notify(msg) {
   $notice.html(msg);
   return msg;
 }
+
 function nextTurn() {
     playername = players[currentPlayer - 1].name;
     notify(playername + '\'s Turn');
 }
+
+var handler = function () {
+    // get the input value and reset
+    var value = $modalInput.val();
+    
+    $modalInput.val('');
+
+    // remove event handlers and hide everything
+    $modalButton.off();
+    $modalInput.off();
+    $modalOverlay.hide();
+
+    // execute the callback
+    callback(value);
+  };
+
 var currentPlayer = 1,
   playername = '',
   players = [],
@@ -21,6 +38,35 @@ var currentPlayer = 1,
   $modalPrompt,
   $notice;
 
+function promptUser(prompt, callback) {
+    // show the modal, set the prompt and set focus
+    $modalOverlay.show();
+    $modalPrompt.html(prompt);
+    $modalInput.focus();
+
+    // add event listeners
+    $modalButton.on('click');
+    $modalInput.on('keypress', function (e) {
+      if (e.which == 13) {
+
+        handler();
+        return false;
+      }
+    });
+}
+
+$(function () {
+    // create a new board
+    var board = new XOBoard();
+
+    // grab jQuery collections
+    $modalOverlay = $("#overlay");
+    $modalPrompt = $("#modal .prompt");
+    $modalInput = $("#modal input");
+    $modalButton = $("#modal button");
+
+});
+
 module.exports = {
-    notify
+    notify,
 }
