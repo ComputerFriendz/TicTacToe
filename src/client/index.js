@@ -107,7 +107,11 @@ $(function () {
     else if (board.isTie()) {
       notify('Draw!');
     }
-
+    // otherwise proceed to the next player's turn
+    else {
+      currentPlayer = (currentPlayer == 1) ? 2 : 1;
+      nextTurn();
+    }
   });
 
 
