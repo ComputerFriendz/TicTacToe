@@ -103,6 +103,11 @@ $(function () {
       });
       notify(playerName + ' Wins!')
     }
+    // otherwise, when all buttons are disabled, game is a draw
+    else if (board.isTie()) {
+      notify('Draw!');
+    }
+
   });
 
 
