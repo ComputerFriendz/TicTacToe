@@ -95,6 +95,12 @@ $(function () {
     // track player's move
     board.set(row, col, currentPlayer);
 
+
+    // otherwise proceed to the next player's turn
+    else {
+      currentPlayer = (currentPlayer == 1) ? 2 : 1;
+      nextTurn();
+    }
   });
 
 
