@@ -2,7 +2,7 @@ import _ from 'lodash';
 import $ from 'jquery';
 import XOBoard from '../logic/Board';
 import Player from '../logic/Player';
-import css from '../styles/app.css';
+import '../styles/app.css';
 
 var currentPlayer = 1,
     playername = '',
