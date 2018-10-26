@@ -1,5 +1,6 @@
 # TicTacToe
 [![CircleCI](https://circleci.com/gh/ComputerFriendz/TicTacToe.svg?style=svg)](https://circleci.com/gh/ComputerFriendz/TicTacToe)
+(https://codecov.io/gh/ComputerFriendz/TicTacToe)
 
 ## Tic-Tac-Toe
 see [Wikipedia]
@@ -10,7 +11,7 @@ see [Wikipedia]
 ----
 ## Assignment
 This is a late term assignment in the course Software Development in Reykjavik University.
-The assignment was about creating a basic TicTacToe game while using good coding pracices and infastructures given in the assignment description. Rather than implementing more features into the game, the main focus was on correct coding structure. 
+The assignment was about creating a basic TicTacToe game while using good coding pracices and infastructures given in the assignment description. Rather than implementing more features into the game, the main focus was on correct coding structure.
 
 ----
 ## Documentation
