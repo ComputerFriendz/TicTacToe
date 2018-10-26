@@ -1,8 +1,8 @@
 import _ from 'lodash';
 import $ from 'jquery';
 
-const PLAYER_1_TOKEN = 'O';
-const PLAYER_2_TOKEN = 'X';
+const PLAYER_1_TOKEN = 'X';
+const PLAYER_2_TOKEN = 'O';
 
 class XOBoard {
 
