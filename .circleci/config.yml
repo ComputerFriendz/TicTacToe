@@ -32,6 +32,4 @@ jobs:
 
       # run tests!
       - run: npm test
-      test:
-        post:
-    - ./bin/codecov -f .nyc_output/*.json
+      
