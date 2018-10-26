@@ -107,6 +107,7 @@ $(function () {
     else if (board.isTie()) {
       notify('Draw!');
     }
+
   });
 
 
