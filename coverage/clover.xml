@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1540580437735" clover="3.2.0">
-  <project timestamp="1540580437736" name="All files">
+<coverage generated="1540593864110" clover="3.2.0">
+  <project timestamp="1540593864110" name="All files">
     <metrics statements="81" coveredstatements="66" conditionals="35" coveredconditionals="21" methods="20" coveredmethods="16" elements="136" coveredelements="103" complexity="0" loc="81" ncloc="81" packages="3" files="5" classes="5">
       <package name="TicTacToe">
         <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
