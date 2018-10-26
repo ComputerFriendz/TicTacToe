@@ -1,4 +1,5 @@
 const path = require('path');
+var webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -28,14 +29,22 @@ module.exports = {
     },
 
     plugins: [
+        new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery'
+        }),
         new HtmlWebpackPlugin({
             template: "./src/client/index.html"
         }),
-        /* new CleanWebpackPlugin(["dist"], {
+        new CleanWebpackPlugin(["dist"], {
              exclude: ["./index.html"]
-         })*/
-
+        })
     ],
+    resolve: {
+    alias: {
+      jquery: "jquery/src/jquery"
+    }
+    },
     devServer: {
         port: 3000,
         open: true,
