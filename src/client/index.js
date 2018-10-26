@@ -73,6 +73,18 @@ $(function () {
         board.reset();
     });
 
+    // when a grid coordinate is clicked, run game logic
+  $('.btn').on('click', function () {
+    // identify which board grid coordinate was clicked
+    var id = $(this).first().attr('id'),
+      arr = id.split('-'),
+      col = parseInt(arr[2], 10),
+      row = parseInt(arr[1], 10);
+
+    // track player's move
+    board.set(row, col, currentPlayer);
+
+  });
 });
 
 module.exports = {
