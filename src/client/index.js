@@ -102,7 +102,7 @@ $(function () {
       players.forEach(function (player) {
         player.recordGame(currentPlayer);
       });
-      notify(playerName + ' Wins!')
+      notify(playername + ' Wins!')
     }
     // otherwise, when all buttons are disabled, game is a draw
     else if (board.findTie()) {
