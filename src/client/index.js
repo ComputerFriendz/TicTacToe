@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import $ from 'jquery';
 import XOBoard from '../logic/Board';
+import Player from '../logic/Player';
 //import css from '../styles/app.css';
 
 $notice = $("#instructions span");
@@ -68,10 +69,21 @@ $(function () {
     $modalInput = $("#modal input");
     $modalButton = $("#modal button");
 
+    // setup players
+    promptUser("Enter a name for player one:", function (name) {
+    players[0] = new Player(name);
+    promptUser("Enter a name for player two:", function (name) {
+      players[1] = new Player(name);
+      nextTurn();
+    });
+    });
+
+    // restart the game when the reset button is pressed
     $('#reset').click(function () {
         currentPlayer = 1;
         board.reset();
     });
+
 
 });
 
