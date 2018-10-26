@@ -24,11 +24,11 @@ jobs:
           - v1-dependencies-
 
       - run: npm install
-            command: sudo npm install codedev
+          
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: npm test && codecov
+      - run: npm test
