@@ -4,6 +4,15 @@ import XOBoard from '../logic/Board';
 import Player from '../logic/Player';
 //import css from '../styles/app.css';
 
+var currentPlayer = 1,
+    playername = '',
+    players = [],
+    $modalButton,
+    $modalInput,
+    $modalOverlay,
+    $modalPrompt,
+    $notice;
+
 $notice = $("#instructions span");
 
 function notify(msg) {
@@ -31,15 +40,6 @@ var handler = function () {
     callback(value);
 };
 
-var currentPlayer = 1,
-    playername = '',
-    players = [],
-    $modalButton,
-    $modalInput,
-    $modalOverlay,
-    $modalPrompt,
-    $notice;
-
 function promptUser(prompt, callback) {
     // show the modal, set the prompt and set focus
     $modalOverlay.show();
@@ -47,7 +47,7 @@ function promptUser(prompt, callback) {
     $modalInput.focus();
 
     // add event listeners
-    $modalButton.on('click');
+    $modalButton.on('click', handler);
     $modalInput.on('keypress', function (e) {
         if (e.which == 13) {
 
@@ -58,7 +58,6 @@ function promptUser(prompt, callback) {
 }
 
 $(function () {
-
 
     // create a new board
     var board = new XOBoard();
@@ -85,7 +84,7 @@ $(function () {
     });
 
     // when a grid coordinate is clicked, run game logic
-  $('.btn').on('click', function () {
+    $('.btn').on('click', function () {
     // identify which board grid coordinate was clicked
     var id = $(this).first().attr('id'),
       arr = id.split('-'),
@@ -113,8 +112,6 @@ $(function () {
       nextTurn();
     }
   });
-
-
 });
 
 module.exports = {
