@@ -1,6 +1,8 @@
 # TicTacToe
 [![CircleCI](https://circleci.com/gh/ComputerFriendz/TicTacToe.svg?style=svg)](https://circleci.com/gh/ComputerFriendz/TicTacToe)
+
 (https://codecov.io/gh/ComputerFriendz/TicTacToe)
+
 
 ## Tic-Tac-Toe
 see [Wikipedia]
