@@ -2,7 +2,7 @@ import _ from 'lodash';
 import $ from 'jquery';
 import XOBoard from '../logic/Board';
 import Player from '../logic/Player';
-//import css from '../styles/app.css';
+import css from '../styles/app.css';
 
 var currentPlayer = 1,
     playername = '',
@@ -25,7 +25,15 @@ function nextTurn() {
     notify(playername + '\'s Turn');
 }
 
-var handler = function () {
+function promptUser(prompt, callback) {
+    // show the modal, set the prompt and set focus
+    $modalOverlay.show();
+    $modalPrompt.html(prompt);
+    $modalInput.focus();
+
+
+    // handle mouse and keyboard events
+    var handler = function () {
     // get the input value and reset
     var value = $modalInput.val();
 
@@ -38,13 +46,7 @@ var handler = function () {
 
     // execute the callback
     callback(value);
-};
-
-function promptUser(prompt, callback) {
-    // show the modal, set the prompt and set focus
-    $modalOverlay.show();
-    $modalPrompt.html(prompt);
-    $modalInput.focus();
+    };
 
     // add event listeners
     $modalButton.on('click', handler);
@@ -95,7 +97,7 @@ $(function () {
     board.set(row, col, currentPlayer);
 
     // when the player completes a row, column or diagonal, they have won
-    if (board.isWinner(row, col, currentPlayer)) {
+    if (board.findWinner(row, col, currentPlayer)) {
       board.disable();
       players.forEach(function (player) {
         player.recordGame(currentPlayer);
@@ -103,7 +105,7 @@ $(function () {
       notify(playerName + ' Wins!')
     }
     // otherwise, when all buttons are disabled, game is a draw
-    else if (board.isTie()) {
+    else if (board.findTie()) {
       notify('Draw!');
     }
     // otherwise proceed to the next player's turn
@@ -113,7 +115,3 @@ $(function () {
     }
   });
 });
-
-module.exports = {
-    notify,
-}
