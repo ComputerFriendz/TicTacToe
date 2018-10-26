@@ -24,7 +24,7 @@ jobs:
           - v1-dependencies-
 
       - run: npm install
-          
+
       - save_cache:
           paths:
             - node_modules
@@ -32,3 +32,6 @@ jobs:
 
       # run tests!
       - run: npm test
+      test:
+        post:
+    - ./bin/codecov -f .nyc_output/*.json
