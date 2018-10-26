@@ -95,6 +95,18 @@ $(function () {
     // track player's move
     board.set(row, col, currentPlayer);
 
+    // when the player completes a row, column or diagonal, they have won
+    if (board.isWinner(row, col, currentPlayer)) {
+      board.disable();
+      players.forEach(function (player) {
+        player.recordGame(currentPlayer);
+      });
+      notify(playerName + ' Wins!')
+    }
+    // otherwise, when all buttons are disabled, game is a draw
+    else if (board.isTie()) {
+      notify('Draw!');
+    }
   });
 
 
