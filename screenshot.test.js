@@ -12,5 +12,4 @@ it("Test if site is active", (async () => {
   await browser.close();
   expect(result).toBe(true);
 }))
-  
 });
