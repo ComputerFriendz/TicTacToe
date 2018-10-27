@@ -12,6 +12,10 @@
     "start": "node server.js",
     "heroku-postbuild": "webpack -p"
   },
+  "jest": {
+  "coverageDirectory": "./coverage/",
+  "collectCoverage": true
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ComputerFriendz/TicTacToe.git"
