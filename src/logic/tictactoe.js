@@ -15,15 +15,5 @@ function tictactoe(currentPlayer)
     }
     return currentPlayer;
 }
-function checkWinner(iswinner) {
-    if (array[0] == currentPlayer && array[1] == currentPlayer && array[2] == currentPlayer) {
-        console.log('WINNER');
-        winner = currentPlayer;
-    }
-    return false;
-}
 
-module.exports = {
-    tictactoe,
-    checkWinner
-}
+module.exports = tictactoe;
