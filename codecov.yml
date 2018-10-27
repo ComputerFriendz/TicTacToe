@@ -1,3 +1,4 @@
 
 ignore:
   - "src/client/index.js"  # ignore folders and all its contents
+  - "app.js"
