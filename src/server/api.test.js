@@ -1,15 +1,13 @@
 const request = require("supertest");
-const api = require("../../app");
+const app = require("../../app");
+
 describe("GET /api/tictactoe/:name endpoint", () => {
     it("should return a 200 OK status code", async () => {
-        const res = await request(api).get("/tictactoe/_");
-        console.log(res.status);
+        const res = await request(app).get("/tictactoe/_");
         expect(res.status).toBe(200);
     });
-    /*it("should return the greeting in a object", async () => {
-        const res = await request(api).get("/api/tictactoe/Diana");
-        console.log("hi");
-        console.log(res.body.tictactoe);
-        expect(res.body.tictactoe).toBe("Hello, Diana!");
-    });*/
+    it("should return the greeting in a object", async () => {
+        const res = await request(app).get("/api/tictactoe/x");
+        expect(res.body.tictactoe).toBe("x");
+    });
 });
