@@ -181,4 +181,15 @@ html, body
   {
     float: right;
   }
+
+  #links
+  {
+    position: fixed;
+    width: 50%;
+    bottom: 10px;
+  }
+
+  a:link {
+    color: red;
+}
   
