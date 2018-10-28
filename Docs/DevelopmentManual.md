@@ -1,4 +1,4 @@
- # Development Manual
+# Development Manual
 
 ## Introduction
 ---
@@ -13,7 +13,7 @@ This manual will guide you through setting up your computer and installing all o
 [node]: https://nodejs.org/en/
 
 ### Additional tools
-These tools are installed through gitbash
+These tools and more are installed through gitbash. Administration manual will cover how these plugins are installed
 
 * Webpack
 * Supertest
@@ -21,6 +21,7 @@ These tools are installed through gitbash
 * Lodash
 * Webpack 
 * Express
+* Babel
 
 These tools are implemented in browser
 
@@ -54,6 +55,3 @@ When you have finished the necessary steps to get started. Please consult the ad
 
 ---
 #####Feel free to contact us anytime if you have any questions related to the program at `John.Google@TheGoogleEmailCompany.com`
-
-
-
