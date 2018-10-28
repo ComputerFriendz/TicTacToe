@@ -7,10 +7,13 @@ it("Test if site is active", (async () => {
   const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
   const page = await browser.newPage();
   await page.goto('https://floating-depths-40711.herokuapp.com/');
-  await page.screenshot({path: 'screenshot.png'});
+  //let baseUrl = 'https://floating-depths-40711.herokuapp.com/'
+  //await page.goto(baseUrl, {"waitUntil" : "networkidle0"});
   const result = await tester(page, 'screenshot.png');
+  //await page.screenshot({path: 'screenshot.png'});
   await browser.close();
   expect(result).toBe(true);
-  jest.setTimeout(30000);
+  //jest.setTimeout(10000);
 }))
 });
+
