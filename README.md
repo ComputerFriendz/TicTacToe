@@ -15,9 +15,9 @@ The assignment was about creating a basic TicTacToe game while using good coding
 
 ----
 ## Documentation
-* Design Report
-* Developers Manual
-* Administration Manual
+ - [Design report](Docs/DesignReport.md)
+ - [Developers manual](Docs/DevelopmentManual.md)
+ - [Administration manual](Docs/AdminManual.md)
 
 ----
 ## Team members
