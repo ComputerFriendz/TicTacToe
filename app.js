@@ -13,12 +13,24 @@ app.get("/Docs/HTML/AdminManual.html",function(req,res){
     res.sendFile(__dirname + "/Docs/HTML/AdminManual.html");
   });
 
+  app.get("/Docs/pdf/AdminManual.pdf",function(req,res){
+    res.sendFile(__dirname + "/Docs/pdf/AdminManual.pdf");
+  });
+
   app.get("/Docs/HTML/DesignReport.html",function(req,res){
     res.sendFile(__dirname + "/Docs/HTML/DesignReport.html");
   });
 
+  app.get("/Docs/pdf/DesignReport.pdf",function(req,res){
+    res.sendFile(__dirname + "/Docs/pdf/DesignReport.pdf");
+  });
+
   app.get("/Docs/HTML/DevelopmentManual.html",function(req,res){
     res.sendFile(__dirname + "/Docs/HTML/DevelopmentManual.html");
+  });
+
+  app.get("/Docs/pdf/DevelopmentManual.pdf",function(req,res){
+    res.sendFile(__dirname + "/Docs/pdf/DevelopmentManual.pdf");
   });
 
 app.get("*", (req, res) => {
