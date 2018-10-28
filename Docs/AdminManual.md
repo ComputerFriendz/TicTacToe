@@ -14,6 +14,9 @@ By clicking each name it will allow you to follow the link and help you how to d
 
 * [Node](https://nodejs.org/en/download/)
 * [Git](https://git-scm.com/downloads)
+* [Heroku](https://devcenter.heroku.com/articles/heroku-cli)
+* [TravisCI](https://github.com/travis-ci/travis.rb)
+* [Webpack](https://webpack.js.org/)
 
 ----
 
