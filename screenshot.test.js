@@ -1,5 +1,3 @@
-import { TIMEOUT } from 'dns';
-
 const puppeteer = require('puppeteer');
 const ScreenTest = require('puppeteer-screenshot-tester');
 
