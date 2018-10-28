@@ -33,6 +33,10 @@ app.get("/Docs/HTML/AdminManual.html",function(req,res){
     res.sendFile(__dirname + "/Docs/pdf/DevelopmentManual.pdf");
   });
 
+  app.get("/Docs/images/diagram.png", function(req,res){
+    res.sendFile(__dirname + "/Docs/images/diagram.png");
+});
+
 app.get("*", (req, res) => {
     res.send({
         error: "No routine defined"
