@@ -1,5 +1,5 @@
 # TicTacToe
-[![CircleCI](https://circleci.com/gh/ComputerFriendz/TicTacToe.svg?style=svg)](https://circleci.com/gh/ComputerFriendz/TicTacToe)
+[![CircleCI](https://circleci.com/gh/ComputerFriendz/TicTacToe/tree/master.svg?style=svg)](https://circleci.com/gh/ComputerFriendz/TicTacToe/tree/master)
 [![codecov](https://codecov.io/gh/ComputerFriendz/TicTacToe/branch/master/graph/badge.svg)](https://codecov.io/gh/ComputerFriendz/TicTacToe)
 
 ## Tic-Tac-Toe
@@ -15,9 +15,9 @@ The assignment was about creating a basic TicTacToe game while using good coding
 
 ----
 ## Documentation
-* Design Report
-* Developers Manual
-* Administration Manual
+ - [Design report](Docs/DesignReport.md)
+ - [Developers manual](Docs/DevelopmentManual.md)
+ - [Administration manual](Docs/AdminManual.md)
 
 ----
 ## Team members

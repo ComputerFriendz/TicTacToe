@@ -46,15 +46,17 @@ so start with "jest", if that worked you should continue down the list.
 * babel-loader
 * babel-present-env
 * jquery
+* puppeteer
+*puppeteer-screenshot-tester
 
 
 
 ### Connecting plugins to repository
 
-Two plugins that need to be connected through a browser are circle CI and heroku. those have already been connected to the repository but keep them n mind if you plan on working on the code
+Two plugins that need to be connected through a browser are Circle CI and Heroku. those have already been connected to the repository but keep them n mind if you plan on working on the code
 
 ---
-In order for the project to deploy and run ..... There you should be able to run the program on localhost:3000
+In order for the project to deploy and run ..... There you should be able to run the program on http://localhost:5000
 
 If you want to get access to the latest version of the repository, it is necessary to access the project root and type 
 
