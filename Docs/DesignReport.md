@@ -10,7 +10,7 @@ In this project we learned to set up technical infrastructure to support agile d
 
 ## Diagram
 ---
-The first thing we did was setting up a diagram for a better vision of what functions and activity(action?) we plan to have in our code.
+The first thing we did was setting up a diagram for a better vision of what functions and activity we plan to have in our code.
 
 
 
