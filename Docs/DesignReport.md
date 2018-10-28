@@ -2,7 +2,7 @@
 
 ## Introduction
 ---
-We are developing a TicTacToe game with Node, Circle CI and Heroku. Setting a few rules will be important for the development process to keep consistency throughout the code.
+We are developing a TicTacToe game with Node, Circle CI and Heroku. A few rules will be set which will be important for the development process to keep consistency throughout the code.
 
 ## Description
 ---
