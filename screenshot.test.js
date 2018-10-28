@@ -11,5 +11,6 @@ it("Test if site is active", (async () => {
   const result = await tester(page, 'screenshot.png');
   await browser.close();
   expect(result).toBe(true);
+  jest.setTimeout(30000);
 }))
 });
