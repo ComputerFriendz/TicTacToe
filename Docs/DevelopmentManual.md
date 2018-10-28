@@ -27,6 +27,7 @@ These tools are implemented in browser
 
 * Heroku 
 * Circle CI 
+* Travis CI
 
 ## Instructions 
 ---
