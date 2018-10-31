@@ -35,7 +35,7 @@ test("returns false if there is no winner", () => {
 });
 
 test("returns false if there is no winner", () => {
-    expect(board.findWinner(1, 2, 1)).toBe(true);
+    expect(board.findWinner(1, 2, 1)).toBe(false);
 });
 
 test("returns false if not all the buttons are disabled", () => {
