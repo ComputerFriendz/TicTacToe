@@ -15,7 +15,7 @@ body {
   {
     /* http://lea.verou.me/css3patterns/#carbon */
     background: linear-gradient(27deg,hotpink 5px, transparent 5px) 0 5px, linear-gradient(207deg, hotpink 5px, transparent 5px) 10px 0px, linear-gradient(27deg,hotpink 5px, transparent 5px) 0px 10px, linear-gradient(207deg, hotpink 5px, transparent 5px) 10px 5px, linear-gradient(90deg, hotpink 10px, transparent 10px), linear-gradient(hotpink 25%,hotpink 25%, hotpink 50%, transparent 50%, transparent 75%, hotpink 75%, hotpink);
-    background-color: hotpink;
+    background-color: #000000;
     background-size: 20px 20px;
   }
 
