@@ -5,7 +5,7 @@ node_js:
 branches:
   only:
   - master
-cache: npm
+cache:
   directories:
   - node_modules
 before_install:
